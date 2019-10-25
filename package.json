@@ -9,7 +9,9 @@
     "react-dom": "^16.8.6",
     "react-player": "^1.13.0",
     "react-scripts": "3.0.1",
-    "reactstrap": "^8.1.1"
+    "reactstrap": "^8.1.1",
+    "styled-components": "^4.4.0",
+    "svg.js": "^2.7.1"
   },
   "scripts": {
     "start": "react-scripts start",
