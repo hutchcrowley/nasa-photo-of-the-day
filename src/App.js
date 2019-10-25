@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import '../public/favicon.ico'
+
 import axios from 'axios'
 import './App.css'
 
