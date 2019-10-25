@@ -1,18 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import styled from 'styled-components';
 
-const Button = styled.button`
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    color: #ffff;
-    background: black;
-  &:hover {
-    background: #0000;
-    color: black;
-}
-`
 
 function App (props)
 {
@@ -39,22 +27,23 @@ function App (props)
   return (
 
     <div id="App">
-      <img src={data.url} alt="NASA apod" />
-      <Button>
-        <a href='https://wwww.nasa.com'>
-          Click me!
+      <div className='wrapper-main'>
+        <img src={data.url} alt="NASA apod" />
+        <button>
+          <a href='https://wwww.nasa.com'>
+            Click me!
             </a>
-      </Button>
-      <h2>
-        {data.title}
-      </h2>
-      <h5>
-        {data.date}
-      </h5>
-
-      <p>
-        {data.description}
-      </p>
+        </button>
+        <h2>
+          {data.title}
+        </h2>
+        <h5>
+          {data.date}
+        </h5>
+        <p>
+          {data.explanation}
+        </p>
+      </div>
     </div>
 
   )
