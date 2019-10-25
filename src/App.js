@@ -1,21 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import './App.css'
-import ImageCard1 from './Components/ImageComponents/ImageCard1'
-import ImageCard2 from './Components/ImageComponents/ImageCard2'
-import ImageCard3 from './Components/ImageComponents/ImageCard3'
 
 function App() {
+  const [data, setData] = useState([])
+  useEffect(() => {
+    axios
+      .get(
+        'https://api.nasa.gov/planetary/apod?api_key=zgbzTnPJh7YJt0VsZMynxjp3fx6qW15PZhlJ3aob'
+      )
+      .then((res) => {
+        setData(res.data)
+        console.log(res)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }, [])
+
   return (
-    <div className="home-base">
-      <div className="image-card-1">
-        <ImageCard1 />
-      </div>
-      <div className="image-card-2">
-        <ImageCard2 />
-      </div>
-      <div className="image-card-3">
-        <ImageCard3 />
-      </div>
+    <div className="card-wrapper">
+      <img src={data.url} alt="NASA apod" />
+      <h5>{data.date}</h5>
+      <h1>{data.title}</h1>
+      <p>{data.explanation}</p>
     </div>
   )
 }
