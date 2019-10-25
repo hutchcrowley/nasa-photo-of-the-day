@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="840" viewBox="0 0 1440 840">
+  <g fill="none" fill-rule="evenodd" transform="translate(0 -92)">
+    <g transform="translate(-361.17 93)">
+      <rect width="596" height="559.66" x="-18" y="168.17" fill="#563F3F" fill-opacity=".8" stroke="#C27676" rx="21" transform="rotate(90 280 448)"/>
+      <rect width="838" height="788" x="662.17" y="25" fill="#563F3F" fill-opacity=".8" stroke="#C27676" rx="21" transform="rotate(90 1081.17 419)"/>
+      <rect width="592.366" height="556.184" x="1545.17" y="141" fill="#563F3F" fill-opacity=".8" stroke="#C27676" rx="21" transform="rotate(90 1841.353 419.092)"/>
+      <g transform="rotate(90 715.085 1052.085)">
+        <ellipse cx="82.757" cy="1315.5" fill="#340B0B" opacity=".668" rx="70" ry="73"/>
+        <ellipse cx="70" cy="73" fill="#340B0B" opacity=".668" rx="70" ry="73" transform="rotate(180 70 73)"/>
+        <polygon fill="#000" fill-opacity=".377" points="81.757 1291 113.257 1349 50.257 1349" opacity=".824" transform="matrix(1 0 0 -1 0 2640)"/>
+        <polygon fill="#000" fill-opacity=".377" points="69 48.5 100.5 106.5 37.5 106.5" opacity=".824" transform="matrix(-1 0 0 1 138 0)"/>
+      </g>
+    </g>
+    <text fill="#4A4A4A" font-family="AvenirNext-Medium, Avenir Next" font-size="48" font-weight="400">
+      <tspan x="458" y="863">Image Card 2 (Load)</tspan>
+    </text>
+  </g>
+</svg>
